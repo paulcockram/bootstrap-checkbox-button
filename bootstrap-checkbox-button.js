@@ -36,11 +36,13 @@
         var buttonWidth = Math.max(offWidth, onWidth);
         $button.css("width", buttonWidth + "px");
 
+        update($checkbox.is(':checked'));
+
+		$button.find('span:last').remove();
+		
         $button.on('click', function () {
             $checkbox.trigger('click');
             update($checkbox.is(':checked'));
         });
-
-        update($checkbox.is(':checked'));
     });
 });
