@@ -12,7 +12,7 @@
         var buttonSize = (typeof $checkbox.data('btn-size') != 'undefined') ? "btn-" + $checkbox.data('btn-size') : 'btn-md';
 
         $checkbox.hide();
-        $checkbox.after("<span style="display:none"><button type='button' id='" + $checkbox.attr("id") + "-button' class='btn " + buttonSize + "'><i class='state-icon'></i>&nbsp;<span class='state-text'></span></button></span>");
+        $checkbox.after("<span style='display:none'><button type='button' id='" + $checkbox.attr("id") + "-button' class='btn " + buttonSize + "'><i class='state-icon'></i>&nbsp;<span class='state-text'></span></button></span>");
 
         var $button = $checkbox.next();
 
